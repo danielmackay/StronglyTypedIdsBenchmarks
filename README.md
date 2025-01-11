@@ -20,4 +20,5 @@ BenchmarkDotNet v0.13.7, Windows 11 (10.0.22631.2129)
 | ReadonlyRecordStructStronglyTypedId | 15.38 us | 0.294 us | 0.302 us |       - |      64 B |
 |               RecordStronglyTypedId | 31.48 us | 0.628 us | 0.901 us | 25.4517 |  320064 B |
 |                ClassStronglyTypedId | 32.81 us | 0.645 us | 1.096 us | 25.4517 |  320064 B |
+|                      VogenStronglyTypedId | TBC us | TBC us | TBC us |       TBC |      64 B |
 ```

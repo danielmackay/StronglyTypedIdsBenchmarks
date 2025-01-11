@@ -6,4 +6,5 @@ public class BusinessProcess
     public ProductId ProcessProduct(ProductId id) => id;
     public CustomerId ProcessCustomer(CustomerId id) => id;
     public PersonId ProcessPerson(PersonId id) => id;
+    public VogenId ProcessVogenId(VogenId id) => id;
 }

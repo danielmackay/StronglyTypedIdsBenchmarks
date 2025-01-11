@@ -44,4 +44,10 @@ public class Benchmarks
     {
         _generatedGuids.ForEach(x => _businessProcess.ProcessPerson(new PersonId(x)));
     }
+
+    [Benchmark]
+    public void VogenId()
+    {
+        _generatedGuids.ForEach(x => _businessProcess.ProcessVogenId(VogenId.From(x)));
+    }
 }
