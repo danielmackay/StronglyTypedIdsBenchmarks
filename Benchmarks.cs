@@ -19,12 +19,16 @@ public class Benchmarks
             .ToList();
     }
 
-    
-
     [Benchmark]
     public void RecordId()
     {
         _generatedGuids.ForEach(x => _businessProcess.ProcessProduct(new ProductId(x)));
+    }
+
+    [Benchmark]
+    public void SealedRecordId()
+    {
+        _generatedGuids.ForEach(x => _businessProcess.ProcessLineItem(new LineItemId(x)));
     }
 
     [Benchmark]
@@ -48,6 +52,6 @@ public class Benchmarks
     [Benchmark]
     public void VogenId()
     {
-        _generatedGuids.ForEach(x => _businessProcess.ProcessVogenId(VogenId.From(x)));
+        _generatedGuids.ForEach(x => _businessProcess.ProcessOrder(OrderId.From(x)));
     }
 }
